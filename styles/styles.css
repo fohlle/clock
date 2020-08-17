@@ -7,18 +7,27 @@ body{
     background:linear-gradient(to left top,rgba(75, 238, 230,0.4),rgba(180, 20, 243, 0.4));
 }
 .clock-container{
-    border:black solid 1px;
     display:grid;
     grid-template-columns: repeat(4, 100px);
-    grid-template-rows: 100px;
+    grid-template-rows: 100px,100px;
     justify-content: center;
     align-content: center;
     min-height:100vh;
 
 }
 .clock-container > div{
+    border:black solid 1px;
     font-size:3rem;
     display:flex;
     align-items: center;
-    justify-self: center;
+    padding-left:20px;
+}
+.stop-time{
+    border-radius: 10px;
+    font-size:20px;
+    align-items: center;
+    outline:none;
+}
+.alarm{
+    grid-column: 1 / -1;
 }
